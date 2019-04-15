@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 20px 20px 20px;
+}
+.btn {
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border: 1px solid #555;
+  background: #fff;
+  color:#555;
+  font-size:14px;
+  line-height:16px;
+  font-weight:700;
+  position: relative;
+  cursor:pointer;
+}
+.btn:hover {
+  background: #555;
+  color:#FFF;
+}
+.loading {
+  background-color: blue;
+  height: 5px;
+}
+.btn-login-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn-login-group > .btn {
+  margin: 0px 0px 20px;
+  width: 100%;
+  border:0px solid #666;
+  background:#666;
+  color:#FFF;
+}
+.btn-login-group > .btn:hover {
+  border:0px solid #000;
+  background:#000;
+  text-decoration: none;
+}
+.btn-login-group > .btn:focus {
+  outline: 0;
+  font-weight: 700;
+}
+.login {
+	width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding:50px 0px;
+}
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-form .inputbox, .inputbox {
+  display:block;
+  padding:12px 10px;
+  font-size:14px;
+  line-height:16px;
+  color:#CCC;
+  border:1px solid #666;
+  margin:10px 0px;
+}
+.login-error {
+  margin: 0 auto;
+  color: red;
+  font-weight:700;
+}
+
+
+.question-list {
+  width: 100%;
+  margin: 0 auto;
+}
+.btn-list-group {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn-list-group > .btn {
+  margin: 10px -1px;
+  padding: 12px 30px;
+  width:auto;
+}
+.btn-list-group > .btn:first-child {
+  border-radius:5px 0px 0px 5px;
+}
+.btn-list-group > .btn:last-child {
+  border-radius:0px 5px 5px 0px;
+}
+.btn-list-group > .btn:hover {
+  border-color: rgba(0,0,0,.75);
+  background-color: rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+.btn-list-group > .btn:focus {
+  outline: 0;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  left:0px;
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #EEE;
+  border-bottom:3px solid #DDD;
+  text-align:center;
+}
+.nav ul {
+  margin: 0 auto;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav li {
+  width: 100%;
+  max-width: 200px;
+  padding: 0px;
+  text-align: center;
+  font-size:13px;
+  font-weight:700;
+  color:#000;
+  text-decoration:none;
+}
+.nav li a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  line-height: 14px;
+}
+.nav li a:hover{
+  background:#DDD;
+  color:#111;
+}
+
+.nav div.user-details {
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height:35px;
+  font-size:11px;
+}
+.nav-user-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  margin: 0px;
+  margin-right: 10px;
+  display:block;
+  float:left;
+  line-height:35px;
+}
+.nav div.user-details span {
+  display:block;
+  margin-right: 10px;
+  float:left;
+  line-height:35px;
+}
+.nav div.user-details span.logout {
+  cursor:pointer;
+}
+
+
+ul {
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+  padding: 20px 0px;
+  text-decoration: none;
+}
+
+h3 {
+  text-align:center;
+  font-size:22px;
+  line-height:24px;
+  color:#BBB;
+  font-weight:300;
+}
+
+
+.question {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+}
+.options {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.options > div.option {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #EEE;
+  border-radius: 10px 10px 0px 0px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 12px;
+}
+.options > div.option:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+.options > div.option:last-child {
+  border-radius: 0px 10px 0px 0px;
+}
+.detailsButton a {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px;
+  background: #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius:0px 0px 10px 10px;
+}
+.detailsButton a:hover {
+  background:#666;
+}
+.question-details {
+  width: 100%;
+  margin: 0 auto;
+}
+.author-details {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 11px;
+  color: #555;
+  line-height: 25px;
+}
+.user-avatar {
+  height: 25px;
+  border-radius: 100%;
+  margin: 0px 10px;
+}
+
+.options-details {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.options-details > div.option {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+}
+
+div.option > .btn {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px;
+  background: #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius:10px;
+}
+div.option > .btn:hover {
+  background:#666;
+}
+div.option p {
+  font-size:14px;
+  line-height:18px;
+}
+div.option p.selected {
+  font-size:12px;
+  line-height:16px;
+  font-weight:700;
+  color:#000;
+}
+.add-question {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.add-question-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.leaderboard {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.leaderboard-row {
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+}
+.leaderboard-details .user-details {
+  float:left;
+  width: 100px;
+}
+.leaderboard-details .user-details .user-avatar {
+  height: 60px;
+  border-radius: 100%;
+  margin: 0px 20px 0px 20px;
+}
+.leaderboard-details h3 {
+  text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+  color: #555;
+  font-weight: 700;
+  margin:0px;
+  text-transform:uppercase;
+  padding:5px 0px 7px;
+}
+.leaderboard-details .user-stat {
+  display:block;
+  border-top:0px solid #EEE;
+}
+.leaderboard-details .user-stat p {
+  margin: 0px 0px 0px 0px;
+  padding:0px 0px 5px 0px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #CCC;
+}
